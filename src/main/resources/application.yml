@@ -1,0 +1,13 @@
+server:
+  port: 8080
+ 
+spring:
+  datasource:
+    username: postgres
+    password: postgres
+    url: jdbc:postgresql://1.15.116.70:5432/poom
+    driver-class-name: org.postgresql.Driver
+ 
+mybatis:
+  mapper-locations: classpath:mapping/*Mapper.xml
+  type-aliases-package: com.book.entity
