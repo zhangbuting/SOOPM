@@ -2,6 +2,7 @@ package com.book.mapper;
 
 import java.util.List;
 
+import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 
 import com.book.entity.Student;
@@ -12,5 +13,11 @@ public interface StudentMapper {
 	List<Student> findAll();
 	
 	Student findStudentByID(int id);
+	
+	int Insert(Student student);
+	
+	int update(Student student);
+	
+	int delete(int id);
 	
 }

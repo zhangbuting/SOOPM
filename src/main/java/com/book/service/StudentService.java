@@ -1,6 +1,7 @@
 package com.book.service;
 import java.util.List;
 
+import org.apache.ibatis.annotations.Insert;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -20,5 +21,16 @@ public class StudentService {
 	public List<Student> findAll (){
 		return studentMapper.findAll();
 	}
-
+	
+	public int Insert(Student student) {
+		return studentMapper.Insert(student);
+	}
+	
+	public int update(Student student) {
+		return studentMapper.update(student);
+	}
+	
+	public int delete(int id) {
+		return studentMapper.delete(id);
+	}
 }

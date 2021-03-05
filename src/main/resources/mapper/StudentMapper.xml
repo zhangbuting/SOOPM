@@ -17,5 +17,19 @@
     <select id="findAll" resultType="com.book.entity.Student">
         select * from student
     </select>
+    
+    <insert id="insert" parameterType="com.book.entity.Student">
+		insert into student(id,name,age,homeAddress,grade) 
+		values(#{id},#{name},#{age},#{homeAddress},#{grade})
+	</insert>
+	
+	<delete id="delete" parameterType="int">
+		delete from student where id = #{id}
+	</delete>
+	
+	<update id="update" parameterType="com.book.entity.Student">
+		update student set name = #{name} where id = #{id}
+	</update>
+ 
  
 </mapper>
