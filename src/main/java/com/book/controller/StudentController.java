@@ -44,8 +44,16 @@ public class StudentController {
 	
 	@PostMapping("/update")
 	public String update(Student student) {
-		System.out.println(student);
+
 		studentService.update(student);
+		
+		 return "redirect:/students"; 
+	}
+	
+	@GetMapping("/delete/{id}")
+	public String delete(@PathVariable int id) {
+
+		studentService.delete(id);
 		
 		 return "redirect:/students"; 
 	}

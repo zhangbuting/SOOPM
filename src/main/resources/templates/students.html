@@ -111,7 +111,8 @@
                 <td th:text="${s.address}"></td>
                 <td th:text="${s.grade}"></td>
                 <td>
-	                <button type="button" class="btn btn-danger">DEL</button></td>
+                <a th:href="'/students/delete/'+${s.id}"><button type="button" class="btn btn-danger" >DEL</button></td></a>
+	                
                 </td>
                 
             </tr>
