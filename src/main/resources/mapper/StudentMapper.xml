@@ -28,7 +28,7 @@
 	</delete>
 	
 	<update id="update" parameterType="com.book.entity.Student">
-		update student set name = #{name} where id = #{id}
+		update student set name = #{name},age = #{age},address = #{address},grade = #{grade} where id = #{id}
 	</update>
  
  

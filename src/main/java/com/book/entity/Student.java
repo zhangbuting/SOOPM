@@ -7,7 +7,7 @@ public class Student {
 	private Integer id;
 	private String name;
 	private Integer age;
-	private String homeAddress;
+	private String address;
 	private String grade;
 	
 
