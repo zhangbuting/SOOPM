@@ -23,7 +23,7 @@ public class StudentService {
 	}
 	
 	public int Insert(Student student) {
-		return studentMapper.Insert(student);
+		return studentMapper.insert(student);
 	}
 	
 	public int update(Student student) {

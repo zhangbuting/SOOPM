@@ -19,8 +19,8 @@
     </select>
     
     <insert id="insert" parameterType="com.book.entity.Student">
-		insert into student(id,name,age,homeAddress,grade) 
-		values(#{id},#{name},#{age},#{homeAddress},#{grade})
+		insert into student(id,name,age,address,grade) 
+		values(#{id},#{name},#{age},#{address},#{grade})
 	</insert>
 	
 	<delete id="delete" parameterType="int">

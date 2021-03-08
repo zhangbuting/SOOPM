@@ -57,4 +57,20 @@ public class StudentController {
 		
 		 return "redirect:/students"; 
 	}
+	
+	@GetMapping("/new")
+	public String creatStudent(Model model) {
+		
+		return "studentCreate";
+		
+	}
+	
+	@PostMapping("/insert")
+	public String insert(Student student) {
+		
+		
+		studentService.Insert(student);
+		 return "redirect:/students"; 
+		
+	}
 }
